@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Blog Posts</title>
+    <link rel="stylesheet" href="{% static 'css/blogs.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        #latest-blogs {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .blogs-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .blog-post {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .blog-post img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .blog-post h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .blog-post p {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .blog-post a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .blog-post a:hover {
+            background-color: #0056b3;
+        }
+
+        #add-blog-btn {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 8px 16px; /* Adjust padding to make the button smaller */
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #add-blog-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="latest-blogs">
+        <h2>Latest Blog Posts</h2>
+        <div class="blogs-container">
+            <div class="blog-post">
+                <img src="{% static 'images/image.png' %}" alt="Sustainable City">
+                <h3>How to Make Your City More Sustainable</h3>
+                <p>Discover practical tips for promoting sustainability in urban areas.</p>
+                <a href="blog-details.html">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="{% static 'images/clean-water.jpg' %}" alt="Clean Water">
+                <h3>The Importance of Clean Water</h3>
+                <p>Learn about the vital role clean water plays in our communities.</p>
+                <a href="blog-details.html">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="{% static 'images/recycle.jpg' %}" alt="Recycling">
+                <h3>Effective Recycling Practices</h3>
+                <p>Tips on how to recycle effectively and reduce waste.</p>
+                <a href="blog-details.html">Read More</a>
+            </div>
+        </div>
+        <a href="add-blog.html" id="add-blog-btn">Add New Blog</a>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,286 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8; /* Light grey background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-lg {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #28a745; /* Green background for button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-lg:hover {
+    background-color: #218838; /* Darker green background on hover */
+}
+
+.captcha-text {
+    font-size: 0.875em;
+    color: #888;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+
+.custom-card {
+    background-color: #5d5e61;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limit width for better responsiveness */
+    margin: 0 auto; /* Center align */
+    text-align: center; /* Center text and elements */
+}
+
+.card-image {
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.card-image img {
+    width: 150px; /* Adjust image width as needed */
+    height: 150px; /* Adjust image height as needed */
+    border-radius: 50%; /* Make the image round */
+    display: block; /* Ensure image is centered */
+    margin: 0 auto 20px; /* Center image horizontally */
+}
+
+.card-text p {
+    font-size: 1.2em;
+    margin: 0;
+    color: white; /* Text color for card content */
+}
+
+.card-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-donate {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px; /* Curved edges */
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+
+/* Existing styles... */
+
+
+.event img, .blog-post img, .opportunity img, .activity img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Limit maximum width */
+    max-height: 320px; /* Limit maximum height */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+nav {
+    background-color: #ffffff; /* White background for navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow for navbar */
+    padding: 20px 20px 15px; /* Increased top and bottom padding */
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar is on top */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000000; /* Black text */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #ffffff; /* White text on hover */
+    border-radius: 30px; /* Larger rounded corners on hover */
+}
+
+header {
+    background-color: #ffffff; /* White background for header */
+    color: #000000; /* Black text */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 20px 0 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    color: #000000; /* Black text */
+}
+
+.event, .blog-post, .opportunity, .activity {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f8f8; /* Light grey background for cards */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event h3, .blog-post h3, .opportunity h3, .activity h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #000000; /* Black text */
+}
+
+.event p, .blog-post p, .opportunity p, .activity p {
+    font-size: 1em;
+    margin: 0 0 10px;
+    color: #333; /* Dark grey text */
+}
+
+a {
+    color: #1e88e5; /* Samsung's link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none; /* No underline on hover */
+}
+
+button {
+    background-color: #000000; /* Black button background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+button:hover {
+    background-color: #333333; /* Darker button color on hover */
+    border-radius: 30px; /* Larger rounded corners on hover */
+}
+
+footer {
+    background-color: #000000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="email"], form input[type="password"], form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #1e88e5; /* Samsung's button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005cb2; /* Darker button color on hover */
+}
+

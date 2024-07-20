@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Sustainable Cities and Communities</title>
+    <style>
+        /* Global styles */
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 30px;
+        }
+
+        nav ul li a.highlight {
+            background-color: #1e88e5;
+            color: white;
+            border-radius: 30px;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin: 20px 0 0;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-radius 0.3s;
+        }
+
+        button:hover {
+            background-color: #333333;
+            border-radius: 30px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-container">
+        {% include 'navbar.html' %}
+    </div>
+    <header>
+        <h1>Edit Profile</h1>
+    </header>
+    <main>
+        <form action="update-profile.php" method="POST">
+            <h2>Update Profile Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="John Doe" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="johndoe@example.com" required>
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sustainable Cities and Communities. All rights reserved.</p>
+    </footer>
+</body>
+</html>

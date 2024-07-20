@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Blog</title>
+    <link rel="stylesheet" href="{% static 'css/add-blog.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        #add-blog-form {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            background: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        #add-blog-form h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        #add-blog-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        #add-blog-form input,
+        #add-blog-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #add-blog-form button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #add-blog-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form id="add-blog-form" enctype="multipart/form-data">
+        <h3>Add New Blog</h3>
+        <label for="blog-title">Blog Title:</label>
+        <input type="text" id="blog-title" name="blog-title" required>
+        <label for="blog-image">Select Image:</label>
+        <input type="file" id="blog-image" name="blog-image" accept="image/*" required>
+        <label for="blog-content">Blog Content:</label>
+        <textarea id="blog-content" name="blog-content" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</main>
+</body>
+</html>

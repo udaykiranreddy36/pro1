@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Sustainable Cities and Communities</title>
+    <style>
+        /* Global styles */
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 30px;
+        }
+
+        nav ul li a.highlight {
+            background-color: #1e88e5;
+            color: white;
+            border-radius: 30px;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin: 20px 0 0;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        section {
+            flex: 1 1 45%;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            min-width: 300px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #000000;
+        }
+
+        .activity, .achievement, .stat {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity h3, .achievement h3, .stat h3 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+            color: #000000;
+        }
+
+        .activity p, .achievement p, .stat p {
+            font-size: 1em;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        a {
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-radius 0.3s;
+        }
+
+        button:hover {
+            background-color: #333333;
+            border-radius: 30px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-container">
+        {% include 'navbar.html' %}
+    </div>
+    <header>
+        <h1>User Profile</h1>
+        <a href="edit-profile.html" id="edit-profile-btn">Edit Profile</a>
+    </header>
+    <main>
+        <section id="user-info">
+            <h2>Personal Information</h2>
+            <img src="user-profile.jpg" alt="User Profile Picture" class="profile-pic">
+            <p>Name: John Doe</p>
+            <p>Email: johndoe@example.com</p>
+        </section>
+        <section id="user-activities">
+            <h2>Your Activities</h2>
+            <div class="activity">
+                <img src="community-cleanup.jpg" alt="Community Cleanup">
+                <h3>Volunteered Events</h3>
+                <p>Community Cleanup on July 15th</p>
+            </div>
+            <div class="activity">
+                <img src="sustainable-city.jpg" alt="Sustainable City">
+                <h3>Blog Posts</h3>
+                <p>How to Make Your City More Sustainable</p>
+            </div>
+        </section>
+        <section id="user-achievements">
+            <h2>Achievements</h2>
+            <div class="achievement">
+                <img src="award.jpg" alt="Award">
+                <h3>Volunteer of the Month</h3>
+                <p>Recognized for outstanding contributions in May 2024.</p>
+            </div>
+            <div class="achievement">
+                <img src="medal.jpg" alt="Medal">
+                <h3>Eco Warrior</h3>
+                <p>Achieved for participating in 10 sustainability events.</p>
+            </div>
+        </section>
+        <section id="community-stats">
+            <h2>Community Statistics</h2>
+            <div class="stat">
+                <h3>100+</h3>
+                <p>Events Organized</p>
+            </div>
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Volunteers</p>
+            </div>
+            <div class="stat">
+                <h3>3000+</h3>
+                <p>Hours Contributed</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sustainable Cities and Communities. All rights reserved.</p>
+    </footer>
+</body>
+</html>
